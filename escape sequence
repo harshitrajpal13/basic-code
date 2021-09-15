@@ -1,0 +1,10 @@
+#include <stdio.h>
+
+int main()
+{
+   printf ("Hello World\n\n\t");
+   printf("harshit\n\n\t\t");
+   printf("rajpal");
+   
+   return 0;
+}
