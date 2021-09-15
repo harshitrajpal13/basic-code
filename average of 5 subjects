@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main()
+{
+  float sb1,sb2,sb3,sb4,sb5,total,average;
+  
+  scanf("%f%f%f%f%f",&sb1,&sb2,&sb3,&sb4,&sb5);
+  
+ total=sb1+sb2+sb3+sb4+sb5;
+ 
+ printf("total marks=%f\n",total);
+ 
+ average=total/5;
+ 
+  printf("Average marks=%f",average);
+  
+   return 0;
+}
