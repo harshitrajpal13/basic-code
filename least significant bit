@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main()
+{
+    int num;
+
+    printf("Enter any number:\n ");
+    scanf("%d", &num);
+
+    if(num % 1)
+        {
+            printf("LSB of %d is unset (0)\n", num);
+             printf("it is also EVEN no.");
+        }
+    else 
+    {
+        printf("LSB of %d is set (1)\n", num);
+        printf("it is also ODD no.");
+}
+    return 0;
+}
