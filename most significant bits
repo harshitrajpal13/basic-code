@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main()
+{
+    int num, most_sb;
+
+    scanf("%d", &num);
+
+    
+    most_sb = 1 << (32-1);
+
+    
+    if(num & most_sb)
+    
+        {
+            printf("MSB of %d is set (1).\n", num);
+            printf("number is negetive", num);
+        }
+    else
+    {
+        printf("MSB of %d is unset (0).\n", num);
+        printf("number is positive", num);
+    }
+    return 0;
+    
+}
