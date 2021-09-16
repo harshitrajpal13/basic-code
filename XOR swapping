@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main()
+{
+    int num1, num2;
+
+    printf("Enter any two numbers:\n ");
+    scanf("%d%d", &num1, &num2);
+
+    printf("enter a number num1 = %d\n", num1);
+    printf("enter a number num2 = %d\n\n\t\t", num2);
+
+    
+    num1 ^= num2;
+    num2 ^= num1;
+    num1 ^= num2;
+
+    printf("Num1 after swapping = %d\n\t\t", num1);
+    printf("Num2 after swapping = %d\n", num2);
+
+    return 0;
+}
