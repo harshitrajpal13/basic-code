@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main()
+{
+    int num ,divided ;
+
+    printf("Enter any number:\n ");
+    scanf("%d", &num);
+
+   divided = num >> 1;
+    
+    printf("divided no. = %d\n", divided);
+
+    return 0;
+}
