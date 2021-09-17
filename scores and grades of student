@@ -5,20 +5,21 @@ int main()
 {
     int marks;
 scanf("%d",&marks);
+printf("enter your marks");
 
-if(marks<=100)
+if(marks>=80 && marks<=100)
 {
     printf("the student got A grade");
 }   
-else if(marks>=80)
+else if(marks>=70 && marks<80)
 {
     printf("the student got B grade");
 }
-else if (marks>=60)
+else if (marks>=60 && marks<70)
 {
     printf("the student got C grade");
 }
-else if(marks>=50)
+else if(marks>=50 && marks<60)
 {
     printf("the student got D grade");
 }
@@ -26,7 +27,5 @@ else
     printf("the student got F grade");
     
 }
-
-
 
 
