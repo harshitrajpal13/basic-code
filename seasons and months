@@ -1,0 +1,32 @@
+#include<stdio.h>
+
+int main()
+{
+    int month;
+
+    printf("Enter the month: \n");
+    scanf("%d", &month);
+
+    switch(month)
+    {
+        case 12:
+        case 2:
+        case 1: printf("WINTER SEASON");
+                break;
+        case 3:
+        case 4:
+        case 5: printf("SPRING SEASON");
+                break;
+        case 6:
+        case 7:
+        case 8: printf("SUMMER SEASON");
+                break;
+        case 9:        
+        case 10:
+        case 11: printf("AUTUMN SEASON");
+                break;
+        
+        default: printf("Enter value between 1-12");
+    }
+    return 0;
+}
