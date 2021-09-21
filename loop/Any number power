@@ -9,10 +9,7 @@ int main()
 
     printf("Enter the value of b: ");
     scanf("%d", &b);
-    
- Ll
-    c = 1;
-    x = b;
+      
     while(b!=0)
     {
        
