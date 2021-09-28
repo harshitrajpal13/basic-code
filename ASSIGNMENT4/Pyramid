@@ -1,0 +1,17 @@
+#include <stdio.h>
+ int main() 
+{ 
+int total_rows,row,spaces,star;
+ printf("enter the number of rows\n"); 
+scanf("%d",&total_rows); 
+
+for(row = 1; row <= total_rows; row++ )
+
+ { for(spaces = 1; spaces <= (total_rows - row); spaces++ )
+ printf(" "); 
+for(star = 1; star <= ((2*row) - 1); star++) 
+printf(" * "); 
+printf("\n"); 
+} 
+return 0;
+}
