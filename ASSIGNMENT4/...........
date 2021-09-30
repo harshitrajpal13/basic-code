@@ -1,0 +1,30 @@
+#include<stdio.h>
+
+int main()
+{
+int num_rows, space, i, j;
+
+printf("Enter number of rows: ");
+scanf("%d",&num_rows);
+
+for(i = 0; i <= num_rows; i++)
+     {
+      for(space = (num_rows); space > i; space--)
+      printf(" ");
+      for(j=0; j<i; j++)
+      printf(" * ");
+      printf("\n");
+}
+
+
+for(i = 0; i <= num_rows; i++)
+   {
+   for(space = 0; space < (i+1); space++)
+   printf("  ");
+   for(j = num_rows; j > i; j--)
+   printf(" * ");
+   printf("\n");
+}
+ 
+return 0;
+}
