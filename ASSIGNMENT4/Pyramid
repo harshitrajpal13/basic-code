@@ -15,3 +15,39 @@ printf("\n");
 } 
 return 0;
 }
+
+
+
+
+
+second method...............///////////
+
+#include <stdio.h>
+
+int main()
+{
+ int size;
+ scanf("%d",&size);
+ int mahesh = 1;
+ for(int i=0;i<size;i++){
+     for(int j=(size-1);j>i;j--){
+            printf("    ",i,j);
+     }
+     for(int j=0;j<(2*i+1);j++){
+        if(mahesh){
+            if((i+j)%2==0)
+                printf(" %d%d ",i,j);
+            else
+                printf("    ");
+        }else{
+            if((i+j)%2==0)
+                printf("    ");
+            else
+                printf(" %d%d ",i,j);
+             }
+        }
+    mahesh = !mahesh;
+  printf("\n");
+ }
+ return 0;
+}
