@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main() 
+{
+   int size,i,j;
+   int count=0,arr[10];
+   
+   printf("enter the size of an array\n");
+   scanf("%d",&size);
+  
+    for (i=0; i< size; i++)
+    {
+        for(j=(i+1); j<size;j++)
+        {
+            if(arr[i] == arr[j])
+            {
+               count++;
+               break;
+        
+            }
+            }
+    }
+    printf(" duplicate elements found in array = %d", count);
+    
+    return 0;
+}
