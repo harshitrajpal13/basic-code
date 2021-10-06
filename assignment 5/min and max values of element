@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+int main()
+{
+    int arr[100];
+    int i, max, min, n;
+	
+	
+       printf(" maximum and minimum element in an array :\n");
+       scanf("%d",&n);
+       printf("enter the values\n");
+       for(i=0;i<n;i++)
+            {
+	      printf(" %d\n  ",i);
+	      scanf("%d",&arr[i]);
+	    }
+	   
+	    for(i=1; i<n; i++)
+	    
+	       if(arr[i] > max)
+	    {
+	        max = arr[i];
+	    }
+	    
+	    for(i=1; i<n; i++)
+	    
+	       if(arr[i] < min)
+	    { 
+	        min = arr[i];
+	    }
+	    printf(" minimum element is %d\n",min);
+	    printf(" maximum element is %d\n",max);
+	    
+	    
+}
+	    
