@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main()
+{
+    int arr[100],arr1[100];
+    int i,size;
+	
+       printf(" the sizeber of elements to be stored  :\n");
+       scanf("%d",&size);
+   
+       for(i=0;i<size;i++)
+            {
+	      printf(" %d \n ",i);
+	      scanf("%d",&arr[i]);
+	    }
+    for(i=0;i<size;i++)
+       arr1[i] = arr[i];
+    for(i=0;i<size;i++)
+	  printf("%d %d\n",arr[i],arr1[i]);
+	   
+}
