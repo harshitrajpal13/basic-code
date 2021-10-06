@@ -8,11 +8,11 @@ int main() {
  scanf("%d",&num);
   printf("enter the array of element\n");
  
- for(i = 1;i <num;i++)
+ for(i = 0;i <num;i++)
  {
      scanf("%d",&arr[i]);
  }
- for(i = 1; i < num;i++)
+ for(i = 0; i < num;i++)
  {
      sum = sum+ arr[i];
      avg = sum/num;
