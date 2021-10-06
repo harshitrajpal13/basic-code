@@ -2,7 +2,7 @@
 
 int main() {
  
- int arr[25],i,num;
+ int arr[100],i,num;
  int sum=0,avg=0;
  printf("enterelement in array\n");
  scanf("%d",&num);
