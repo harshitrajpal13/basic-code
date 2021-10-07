@@ -1,0 +1,47 @@
+#include <stdio.h>
+
+int main()
+{
+   int arr1[100],i,n,num;
+      
+    printf("Input the size of array\n ");
+    scanf("%d", &n);
+
+       printf("Input %d elements in the array\n",n);
+       for(i=0;i<n;i++)
+            {
+	      printf(" %d  ",i);
+	      scanf("%d",&arr1[i]);
+	    }
+   printf("Input the value to be inserted \n ");
+   scanf("%d",&num);
+   printf("The exist array list is :\n");
+   for(i=0;i<n;i++)
+      printf("% d \n",arr1[i]);
+   
+   for(i=0;i<n;i++)
+   {
+   	
+    if(num<arr1[i])
+     {
+       n = i;
+       
+     }
+     else
+     {
+     	n=i+1;
+      }
+	 }
+   
+       for(i=0;i<n;i++)
+      printf("After Insert the list is :\n");
+
+   for(i=0;i<n;i++)
+      printf("% d",arr1[i]);
+	  printf("\n");
+}
+
+      
+      
+      
+      
