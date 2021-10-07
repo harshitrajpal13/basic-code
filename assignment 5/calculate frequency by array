@@ -1,0 +1,43 @@
+#include <stdio.h>
+ 
+int main()
+{
+    int arr[100],arr1[100],i,j,num,count=0 ;
+   
+    printf("Enter size of the array \n");
+    scanf("%d", &num);
+ 
+    printf("Enter elements in array\n ");
+    for(i=0; i<num; i++)
+    {
+        scanf("%d",&arr[i]);
+    }
+    
+  for(i=0; i<num; i++)
+    {
+        count=1;
+        if(arr[i]!=0)       /*sir kya yaha pai -1 bhi aa sakta hai kya aapne bataya tha 0 ko bhi no. count krte hai????*/
+		{
+		    for(j=i+1; j<num; j++)
+     
+            {
+        	   if(arr[i]==arr1[j])
+        	    {
+			       count++;
+		       }
+	       }
+    }
+     
+    } 
+         
+ for(i=0; i<num; i++)
+    {
+         if(arr[i]!=0)
+        {
+        	printf("no of %d is %d \n",arr[i],arr1[j]);
+ 
+		} 
+         
+    }    
+    return 0;
+} 
