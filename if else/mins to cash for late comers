@@ -13,19 +13,19 @@ int main()
          printf("%d",sum);
         }
 
-        else if (num <= 10)   
+        else if (num <= 10 && num > 7)   
         {
           sum = (num-7)*250+4*150+3*100;
           printf("%d",sum);
         }        
-
-        else if (num <= 7)                                    /*sir baki toh chl raha hai baki 6 or iske niche wali value galat bata rahi hai*/
+        else if (num <= 7 && num >= 4)   
         {           
            sum = (num-3)*150+3*100;
            printf("%d",sum);
         }
+        
 
-        else if (num <= 3)  
+        else if (num <= 3 && num > 0)  
         {
            sum = num*100;
            printf("%d",sum);
