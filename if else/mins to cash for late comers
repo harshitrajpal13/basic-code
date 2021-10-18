@@ -1,0 +1,43 @@
+#include <stdio.h> 
+
+int main() 
+{   
+    int num,sum;
+
+    printf("Enter a number  \n\n ");
+    scanf("%d%d", &num,&sum);
+    {
+        if (num > 10)      
+        {
+         sum = (num-10)*500+3*250+4*150+3*100;
+         printf("%d",sum);
+        }
+
+        else if (num <= 10)   
+        {
+          sum = (num-7)*250+4*150+3*100;
+          printf("%d",sum);
+        }        
+
+        else if (num <= 7)                                    /*sir baki toh chl raha hai baki 6 or iske niche wali value galat bata rahi hai*/
+        {           
+           sum = (num-3)*150+3*100;
+           printf("%d",sum);
+        }
+
+        else if (num <= 3)  
+        {
+           sum = num*100;
+           printf("%d",sum);
+        }
+
+        else   
+        {
+           printf("student is absent");
+        }
+
+    
+    }
+
+    return 0;
+}
