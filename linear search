@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main()
+{
+    int size;
+    scanf("%d",&size);
+    
+    int arr[size],i;
+    for(i=0;i<size;i++)
+    {
+        scanf("%d",&arr[i]);
+    }
+    int num;
+    scanf("%d",&num);
+    
+    for(i=0;i<size;i++)
+    if(arr[i]==num)
+    break;
+    if(i<size)
+    printf("%d is found at %d position",num,i);
+    else
+    printf("%d is not found",num);
+    
+    
+    
+    return 0;
+}
