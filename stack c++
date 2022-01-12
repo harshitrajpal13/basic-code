@@ -1,0 +1,63 @@
+#include <iostream>
+
+using namespace std;
+
+#define max 100
+
+int stack[max] ={0},top;
+void push (int val)
+{
+     if(top>(max-1))
+      cout<<"stack is full"<<endl;
+    
+      else
+      stack[++top]=val;
+}
+
+void pop()
+{
+      if(top<0)
+      cout<<"stack is empty"<<endl;
+      else
+      top--;
+}
+void peek()
+{
+     if(top<0)
+     cout<<"stack is empty"<<endl;
+     else
+     cout<<"val at top of above stack is "<<stack[top];
+}
+
+int main()
+{
+    int top = -1;
+    while(true)
+    {
+        int cond;
+        cout<<"enter 1 to push"<<endl;
+        cout<<"enter 2 to pop"<<endl;
+        cout<<"enter 3 to peek"<<endl;
+        cin>>cond;
+        switch(cond)
+        {
+            case 1:
+                  int val;
+                  cout<<"enter value to push"<<endl;
+                  cin>>val;
+                  push(val);
+                  break;
+            case 2:
+                 pop();
+                 break;
+            case 3:
+                 peek();
+                 break;
+            default:
+            cout<<"enter no. between 1-3"<<endl;
+        }
+    }
+    cout<<".................................."<<endl<<endl;
+
+    return 0;
+}
