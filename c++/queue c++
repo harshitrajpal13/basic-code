@@ -1,0 +1,68 @@
+#include <iostream>
+
+using namespace std;
+
+#define max 100
+
+int rear , front , q[max];
+void enQ (int val)
+{
+     if(rear>=(max-1))
+         cout<<"Q is full"<<endl;
+    
+     else
+         q[++rear]=val;
+     if(front == -1)
+         front++;
+}
+
+void deQ()
+{
+      if(front== -1)
+         cout<<"Q is empty"<<endl;
+      else
+         front++;
+    if(front>rear)
+          rear = front =-1;
+}
+void peek()
+{
+     if(front== -1)
+         cout<<"Q is empty"<<endl;
+     else
+         cout<<"val at top of above Q is "<<q[front]<<endl;
+}
+
+int main()
+{
+        rear = front = -1;
+    while(true)
+    {
+        int cond;
+        cout<<"choose the condition below::"<<endl;
+        cout<<"enter 1 to enQ"<<endl;
+        cout<<"enter 2 to deQ"<<endl;
+        cout<<"enter 3 to peek>>>>for seeing the value"<<endl;
+        cin>>cond;
+        switch(cond)
+        {
+            case 1:
+                  int val;
+                  cout<<"enter value to enQ"<<endl;
+                  cin>>val;
+                  enQ(val);
+                  break;
+            case 2:
+                 deQ();
+                 break;
+            case 3:
+                 peek();
+                 break;
+            default:
+            cout<<"enter no. between 1-3"<<endl;
+        }
+    }
+    cout<<".................................."<<endl;
+
+    return 0;
+}
